@@ -6,7 +6,7 @@ Clone or Download code and run
 npm install
 ```
 
-2. build up the app file
+2. build the app
 ```
 node run build
 ```
