@@ -1,4 +1,4 @@
-# POST Request in Expressjs 4
+# Simple api server app using Expressjs 4
 
 Clone or Download code and run
 1. Install the npm dependencies
