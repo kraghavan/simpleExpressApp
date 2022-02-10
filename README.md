@@ -37,7 +37,7 @@ curl -X POST http://localhost:3000/api
 npm run test
 ```
 
-6. The logging for each request is captured using winson npm package. Its saved in "app.log" file in the same folder as the app.js or server.js file.
+6. The logging for each request is captured using winston npm package. Its saved in "app.log" file in the same folder as the app.js or server.js file.
 
 7. To disabled logging, please go to appSetting.json and set "logging" field to be false. Its enabled and set to true by default.
 
