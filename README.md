@@ -1,5 +1,5 @@
 # Simple api server app using Expressjs 4
-<p> This is a simple JS server app using express npm package. It returns different outputs for the GET endpoint based on different header values. This projects is for knowledge sharing and learning purposes. Feel free to clone it and modify.</p>
+<p> This is a simple JS server app using express npm package. It returns different outputs for the GET endpoint based on different header values. This project is for knowledge sharing and learning purposes. Feel free to clone it and modify.</p>
 
 
 Clone or Download code and run the following steps.
