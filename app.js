@@ -49,12 +49,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.post('/api', async function(req, res) {
-    if (req.headers.accept) {
-        const myData = {
-            message: "hello world"
-            };
-        res.send(myData);
-    }
+    const myData = {
+        message: "hello world"
+        };
+    res.send(myData);
   });
 
 
