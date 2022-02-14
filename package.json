@@ -6,9 +6,6 @@
   "directories": {
     "test": "test"
   },
-  "jest": {
-    "verbose": true
-  },
   "scripts": {
     "test": "mocha --exit",
     "build": "node app.js",
