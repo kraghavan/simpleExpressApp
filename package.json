@@ -1,5 +1,5 @@
 {
-  "name": "autodesk",
+  "name": "sample server App",
   "version": "0.0.1",
   "description": "simple App using express with POST and GET",
   "main": "app.js",
