@@ -18,7 +18,7 @@ node run build
 node run start
 ```
 
-4. You can use postman (not covering how to use postman here) or send curl requests. Refer the commands below to run curl command to send request to the server app. 
+4. How to send CURL requests to the app? Refer the commands below to run curl command to send request to the server app. 
 
 ```
 // for sending a GET request with Accept header
@@ -39,7 +39,8 @@ npm run test
 
 6. The logging for each request is captured using winston npm package. Its saved in "app.log" file in the same folder as the app.js or server.js file.
 
-7. To disabled logging, please go to appSetting.json and set "logging" field to be false. Its enabled and set to true by default.
+7. How to disable logging? -- please go to appSetting.json and set "logging" field to be false. Its enabled and set to true by default.
+
 
 8. How to install docker image (steps below will not install docker in your laptop)
 ```
@@ -51,17 +52,29 @@ docker build . -t kraghavan611/simple-express-app
 docker run -p 49160:3000 -d kraghavan611/simple-express-app
 ```
 
-10. verify docker container is running 
+10. How to verify docker container is running 
 ```
 docker ps
 ```
 
-11. enter into your docker instance
+11. How to send request to the app (which is running inside docker container)
+```
+// for sending a GET request with Accept header
+curl -X GET http://localhost:49160/api
+
+// for sending GET request without Accept header
+curl -i -X GET -H 'Content-Type: application/json; charset=UTF-8' -H 'Accept:' http://localhost:49160/api
+
+// for sending a POST request 
+curl -X POST http://localhost:49160/api
+```
+
+12. How to enter into your docker instance (get the docker "container id" from step 10)
 ```
 docker exec -it <container id> /bin/bash
 ```
 
-12. Kill docker container
+13. How to Kill docker container
 ```
 docker ps <container id>
 ```
