@@ -56,8 +56,13 @@ docker run -p 49160:3000 -d kraghavan611/simple-express-app
 docker ps
 ```
 
-11. kill docker container
+11. enter into your docker instance
 ```
-docker ps
+docker exec -it <container id> /bin/bash
+```
+
+12. Kill docker container
+```
+docker ps <container id>
 ```
 
