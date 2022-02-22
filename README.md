@@ -41,7 +41,7 @@ npm run test
 
 7. To disabled logging, please go to appSetting.json and set "logging" field to be false. Its enabled and set to true by default.
 
-8. How to install docker image
+8. How to install docker image (steps below will not install docker in your laptop)
 ```
 docker build . -t kraghavan611/simple-express-app
 ```
