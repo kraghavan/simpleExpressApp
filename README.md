@@ -44,12 +44,12 @@ npm run test
 
 8. How to install docker image (steps below will not install docker in your laptop)
 ```
-docker build . -t kraghavan611/simple-express-app
+docker build . -t mydockerUserId/simple-express-app
 ```
 
 9. How to run my app inside docker
 ```
-docker run -p 49160:3000 -d kraghavan611/simple-express-app
+docker run -p 3000:3000 -d mydockerUserId/simple-express-app
 ```
 
 10. How to verify docker container is running 
@@ -60,13 +60,13 @@ docker ps
 11. How to send request to the app (which is running inside docker container)
 ```
 // for sending a GET request with Accept header
-curl -X GET http://localhost:49160/api
+curl -X GET http://localhost:3000/api
 
 // for sending GET request without Accept header
-curl -i -X GET -H 'Content-Type: application/json; charset=UTF-8' -H 'Accept:' http://localhost:49160/api
+curl -i -X GET -H 'Content-Type: application/json; charset=UTF-8' -H 'Accept:' http://localhost:3000/api
 
 // for sending a POST request 
-curl -X POST http://localhost:49160/api
+curl -X POST http://localhost:3000/api
 ```
 
 12. How to enter into your docker instance (get the docker "container id" from step 10)
